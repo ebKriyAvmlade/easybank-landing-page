@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Autour+One&family=Gabarito:wght@900&family=Happy+Monkey&family=Orbitron:wght@600&family=Poppins:wght@300;400;500&family=Public+Sans&family=Roboto:wght@300;400&display=swap');
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+  }
+  
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    height: 4px;
+    width: 100%;
+    background: black;
+    transition: transform 0.3s ease;
+  }
+  a:hover::after {
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    transform: translateX(-50%) scaleX(1);
+  }
+
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 0%;
+    margin: 0%;
+  font-family: public sans;
+}
+
+.bottom-nav{
+    cursor: pointer;
+}
+.bottom-nav2{
+    cursor: pointer;
+}
+
+nav {
+    margin-left: 55px;
+    
+    background-color: white;
+    display: flex;
+    gap: 30px;
+}
+header{
+    z-index: 1200;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    border: 0px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.request-btn{
+    cursor: pointer;
+    padding: 13px 23px;
+    border-radius: 25px;
+    border: none;
+    font-family: public sans;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))
+}
+.first-page{
+   
+    background-color: #faf9f9;
+    flex-direction: row;
+    display: flex;
+    border: 0px solid black;
+    max-width: 500vw;
+    min-width: 10vw;
+    background-image: url(images/bg-intro-desktop.svg);
+    background-position-x: 550px;
+    background-position-y: -215px;
+    max-height: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.phone-wrap{
+    position: relative;
+    bottom: 55px;
+}
+.phone{
+    position: relative;
+    margin-left: 80px;
+    
+}
+.first-intro{
+    min-width: 500px;
+    margin-left: 10%;
+    font-size: 28px;
+    margin-top: 190px;
+    margin-bottom: auto;
+    
+
+}
+
+.first-intro h1{
+    
+    opacity: 0.8;
+    font-weight: 590;
+}
+
+.first-intro p{
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.request-btns{
+    margin-top: 40px;
+    display: flex;
+    padding: 13px 23px;
+    border-radius: 25px;
+    border: none;
+    font-family: public sans;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))
+}
+.second-page{
+    
+    background-color: #edede9;
+    min-height: 80vh;
+}
+.second-intro h1{
+    text-align: left;
+    opacity: 0.9;
+    font-weight: 500;
+}
+.second-intro p{
+    text-align: left;
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 14px;
+}
+.second-intro{
+    
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black
+}
+.para{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 135px;
+}
+.abouts{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    border: 0px solid black;
+    
+}
+.hamburgers{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+.open{
+    
+    
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.fitter{
+    border: 0px solid black;
+    justify-content: center;
+    
+    height: 100%;
+    width: 80%;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    font-size: 14px;
+    
+}
+.open h2{
+    font-weight: 500;
+}
+.open p{
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 14px;
+}
+.third-page{
+    padding-top: 1px;
+    background-color: #faf9f9;
+    height: 100vh;
+    padding-bottom: 100px;
+}
+
+.article-wrapper{
+    gap: 30px;
+    border: 0px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.article{
+    transition: 0.5s;
+background-color: white;
+    max-height: 490px;
+    background-image: url('images/image-currency.jpg');
+    background-size: 297px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 207px;
+    padding: 20px;
+   border: 0px solid black;
+}
+.article:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 2px black;
+}
+.articles:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 2px black;
+}
+.articless:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 2px black;
+}
+.articlesss:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 2px black;
+}
+
+.articles{
+    transition: 0.5s;
+}
+.articless{
+    transition: 0.5s;
+}
+.articlesss{
+    transition: 0.5s;
+}
+
+
+.article-img{
+    
+    width: 100%;
+
+}
+.p{
+    margin-top: 210px;
+}
+
+.third-intro h1{
+   margin-top: 90px;
+    margin-left: 128px;
+    font-weight: 590;
+    font-size: 40px;
+}
+
+.article p{
+    opacity: 0.6;
+    font-size: 12.5px;
+}
+.article h2{
+    font-weight: 500;
+    font-size: 19.9px;
+}
+.articles p{
+    opacity: 0.6;
+    font-size: 12.5px;
+}
+.articles h2{
+    font-weight: 500;
+    font-size: 19.9px;
+}
+.articless p{
+    opacity: 0.6;
+    font-size: 12.5px;
+}
+.articless h2{
+    font-weight: 500;
+    font-size: 19.9px;
+}
+.articlesss p{
+    opacity: 0.6;
+    font-size: 12.5px;
+}
+.articlesss h2{
+    font-weight: 500;
+    font-size: 19.9px;
+}
+footer{
+   height: 200px;
+}
+.articles{
+    background-color: white;
+    max-height: 490px;
+        background-image: url('images/image-restaurant.jpg');
+        background-size: 335px;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        width: 207px;
+        padding: 20px;
+       border: 0px solid black;
+    }
+
+    .articless{
+        background-color: white;
+        max-height: 490px;
+            background-image: url('images/image-plane.jpg');
+            background-size: 335px;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+            width: 207px;
+            padding: 20px;
+           border: 0px solid black;
+        }
+
+        .articlesss{
+            background-color: white;
+            max-height: 490px;
+                background-image: url('images/image-confetti.jpg');
+                background-size: 335px;
+                background-repeat: no-repeat;
+                border-radius: 5px;
+                width: 207px;
+                padding: 20px;
+               border: 0px solid black;
+            }
+        
+
+
+.foot{
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    width: auto;
+    max-width: 2000px;
+    min-width: 20px;
+    background-color: #22577a;
+}
+.logoo img{
+    margin-left: 12px;
+}
+.log{
+    margin-top: 25px;
+}
+.bottom-button{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: fit-content;
+    align-items: center;
+    gap: 0px;
+    border: 0px solid black;
+display: flex;
+flex-direction: column;
+color: #faf9f9
+
+
+}
+.bottom-button p{
+  opacity: 0.6;
+}
+
+
+
+span{
+    margin-right: 30px;
+}
+
+
+
+.social img:hover{
+    background-color: hsl(136, 65%, 51%);
+    border-radius: 5px;
+}
+.bottom-nav p:hover{
+    color: hsl(136, 65%, 51%);}
+    .bottom-nav2 p:hover{
+        color: hsl(136, 65%, 51%);}
+
+.nav-ui{
+    display: none;
+}
+.hamburgers{
+    display: none;
+}
+.android{
+    display: none;
+}
+
+.logoo{
+    gap: 50px;
+    margin-bottom: auto;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+.bottom-nav{
+    margin-bottom: auto;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    color: #faf9f9
+}
+.bottom-nav2{
+    margin-bottom: auto;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    color: #faf9f9;
+}
+.latest{
+    margin-right: px;
+}
+
+
+
+
+        @media only screen and (max-width: 765px) {
+            .android{
+                display: block;
+            }
+            
+            
+            .heads{
+                
+
+            }
+            header img{
+                margin-left: 20px;
+            }
+                .hamburger{
+                    margin-right: 20px;
+                    margin-left: auto;
+                    cursor: pointer;
+                    display: flex;
+                    
+                }
+                
+            
+            
+                
+
+            .no-scroll{
+                overflow: hidden;
+            }
+            .nav-ui p{
+                cursor: pointer;
+            }
+            
+
+            .all-wrap{
+                display: none;
+        }
+        .android-first-pages{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(images/bg-intro-mobile.svg);
+            padding-bottom: 50px;
+            max-height: 145vh;
+            min-height: 10vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: white;
+
+        }
+        .android-phone{
+            display: flex;
+            margin-top: auto;
+            min-width: 10%;
+            min-height: 10%;
+            min-width: 10px;
+            max-width: 680px;
+
+            
+        }
+        .nav-android{
+            height: 250px;
+            display: none;
+            z-index: 1;
+            font-weight: 600;
+            color: #22577a;
+            box-shadow: 0px 0px 5px;
+            border-radius: 5px;
+            padding: 20px;
+            align-items: center;
+            flex-direction: column;
+            
+            width: 290px;
+            background-color: white;
+            margin-top: 100px;
+           position: fixed;
+           transition: max-height 0.3s ease-in-out;
+        }
+        .nav-android.show{
+
+            display: flex;
+        }
+
+        .android-1st-intro{
+
+            width: 70%;
+            align-self: center;
+            border: 0px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        .android-1st-intro p{
+            border: 0px solid black;
+            text-align: center;
+        }
+        .android-1st-intro h1{
+            border: 0px solid black;
+            
+            text-align: center;
+            
+        }
+        #kaka{
+            margin-top: 25px;
+        }
+        .android-second-page{
+            
+            padding-top: 50px;
+            background-color: #faf9f9;
+            min-height: 10px;
+            max-height: 300vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 70px;
+        }
+        .android-first-intro-wrap{
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            border: 0px solid black;
+            max-width: 70%;
+        }
+
+        .android-first-intro-wrap p{
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .android-first-intro-wrap h1{
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .android-first-intro-wrap h1{
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .android-first-intro-wrap p{
+            opacity: 0.6;
+        }
+
+        
+        .android-third-page{
+            
+            gap: 25px;
+            min-height: 10vh;
+            max-height: 100vh;
+            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .android-article{
+            padding-bottom: 190px;
+            background-color: #faf9f9;
+            border-radius: 5px;
+          padding: 30px;
+            height: 530px;
+            
+            border: 0px solid black;
+            width: 58%;
+            background-size: 1px;
+           background-image: url(images/image-currency.jpg);
+           background-repeat: no-repeat;
+           background-size: 490px;
+           
+           background-position-y: -00px;
+        }
+        .article-txt{
+            margin-top: 360px;
+            
+        }
+
+        .android-article2{
+            
+            background-color: #faf9f9;
+            border-radius: 5px;
+          padding: 30px;
+          height: 530px;
+            border: 0px solid black;
+            width: 58%;
+            background-size: 1px;
+           background-image: url(images/image-restaurant.jpg);
+           background-repeat: no-repeat;
+           background-size: 490px;
+           
+           background-position-y: -00px;
+        }
+        .article-txt2{
+            margin-top: 345px;
+            
+        }
+
+        .android-article3{
+            
+            background-color: #faf9f9;
+            border-radius: 5px;
+          padding: 30px;
+          height: 530px;
+            border: 0px solid black;
+            width: 58%;
+            background-size: 1px;
+           background-image: url(images/image-plane.jpg);
+           background-repeat: no-repeat;
+           background-size: 490px;
+           
+           background-position-y: -00px;
+        }
+        .article-txt3{
+            margin-top: 345px;
+            
+        }
+
+        .android-article4{
+            
+            background-color: #faf9f9;
+            border-radius: 5px;
+          padding: 30px;
+          height: 530px;
+            border: 0px solid black;
+            width: 58%;
+            background-size: 1px;
+           background-image: url(images/image-confetti.jpg);
+           background-repeat: no-repeat;
+           background-size: 490px;
+           
+           background-position-y: -00px;
+        }
+        .article-txt4{
+            margin-top: 345px;
+            
+        }
+        
+        footer{
+            width: 100%;
+            height: auto;
+            background-color: #22577a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .android-social{
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+        }
+        .android-bots{
+            margin-top: 20px;
+            text-align: center;
+            
+
+        }
+        footer p{
+            color: white;
+        }
+        .logs{
+            margin-top: 50px;
+        }
+        footer button{
+            margin-top: 20px;
+        }
+
+        .cops{
+            opacity: 0.6;
+            margin-top: 30px;
+        }
+        .android-1st-intro h1{
+            font-weight: 500;
+        }
+
+        .android-1st-intro p{
+            opacity: 0.6;
+        }
+        .android-third-page h1{
+            font-weight: 500;
+        }
+
+        #meow h3{
+            font-weight: 500;
+        }
+  
+        #meow p{
+            opacity: 0.6;
+        }
+
+        .android-first-intro-wrap h2{
+            font-weight: 500;
+            font-size: 37px;
+            text-align: center;
+
+        }
+        .bodys{
+            overflow: auto;
+            overflow-x: hidden;
+        }
+#meow:hover{
+    box-shadow: 0px 0px 3px;
+transform: scale(1.03);
+}
+#meow h3:hover{
+    color: hsl(136, 65%, 51%);;
+}
+#meow{
+    cursor: pointer;
+    transition: 1s;
+}
+        .android-social img:hover{
+            background-color: hsl(136, 65%, 51%);
+            border-radius: 2px;
+        }
+        .android-bots p{
+            cursor: pointer;
+        }
+        .android-bots p:hover{
+            color: hsl(136, 65%, 51%);;
+        }
+  
+    }
+           
